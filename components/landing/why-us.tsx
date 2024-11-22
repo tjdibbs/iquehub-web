@@ -10,7 +10,7 @@ const WhyUs = () => {
       <Container className='space-y-12 py-16'>
         <div className='space-y-6 text-center'>
           <p className='text-sm font-medium'>Why IQUEHUB?</p>
-          <h2 className='text-4xl font-bold text-custom-darkBlue'>
+          <h2 className='text-center text-xl font-bold text-custom-darkBlue lg:text-3xl'>
             We Are Customer-Centric
           </h2>
         </div>
@@ -24,7 +24,7 @@ const WhyUs = () => {
                   width={100}
                   height={100}
                   priority
-                  className='aspect-[4/5] w-full max-w-[250px] object-contain'
+                  className='aspect-[6/4] w-full max-w-[250px] object-contain'
                 />
               </div>
               <div className='space-y-4 text-center'>

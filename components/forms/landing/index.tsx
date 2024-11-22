@@ -35,9 +35,9 @@ const HeroForm = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className='max-w-md space-y-6 rounded-lg bg-white p-8'
+        className='max-w-md space-y-6 rounded-lg bg-white py-8 max-lg:px-4 lg:p-8'
       >
-        <p className='font-semibold text-custom-darkestBlue'>
+        <p className='font-semibold text-custom-darkestBlue max-lg:text-center'>
           Register to learn more about the program pricing and curriculum
         </p>
         <div className='grid grid-cols-2 gap-6'>

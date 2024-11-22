@@ -50,13 +50,13 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className='flex-[2] space-y-4'>
+        <div className='flex-[2] space-y-4 max-lg:w-full'>
           <p>Subscribe to our newsletter</p>
-          <form className='flex items-center gap-0'>
+          <form className='flex w-full items-center gap-0'>
             <Input
               type='email'
               placeholder='Enter your email'
-              className={cn('rounded-br-none rounded-tr-none')}
+              className={cn('flex-1 rounded-br-none rounded-tr-none')}
             />
             <Button
               type='submit'
@@ -72,20 +72,20 @@ const Footer = () => {
       <Container>
         <Separator />
       </Container>
-      <Container className='flex flex-col items-center justify-between gap-6 py-4 lg:flex-row'>
+      <Container className='flex flex-col items-center justify-between gap-4 pb-4 lg:flex-row'>
         <p>&copy; {new Date().getFullYear()} Iquehub. All rights reserved</p>
         <div className='flex items-center gap-4'>
           <Link href='/'>
-            <TwitterIcon className='h-5 w-5 hover:text-custom-beige' />
+            <TwitterIcon className='h-5 w-5 text-gray-50 hover:text-custom-beige' />
           </Link>
           <Link href='/'>
-            <LinkedinIcon className='h-5 w-5 hover:text-custom-beige' />
+            <LinkedinIcon className='h-5 w-5 text-gray-50 hover:text-custom-beige' />
           </Link>
           <Link href='/'>
-            <FacebookIcon className='h-5 w-5 hover:text-custom-beige' />
+            <FacebookIcon className='h-5 w-5 text-gray-50 hover:text-custom-beige' />
           </Link>
           <Link href='/'>
-            <InstagramIcon className='h-5 w-5 hover:text-custom-beige' />
+            <InstagramIcon className='h-5 w-5 text-gray-50 hover:text-custom-beige' />
           </Link>
         </div>
       </Container>

@@ -5,8 +5,8 @@ import { Button } from '../ui/button';
 
 const TakeACourse = () => {
   return (
-    <section className='py-8'>
-      <Container className='grid grid-cols-1 items-center gap-8 lg:grid-cols-2'>
+    <section className='pb-8'>
+      <Container className='grid grid-cols-1 items-center gap-2 lg:grid-cols-2 lg:gap-8'>
         <div>
           <Image
             src={certificate}
@@ -16,11 +16,11 @@ const TakeACourse = () => {
             className='aspect-square w-full max-w-full object-contain'
           />
         </div>
-        <div className='flex flex-col gap-6'>
+        <div className='flex flex-col gap-6 max-lg:text-center'>
           <p className='text-sm font-medium uppercase text-custom-beige'>
             TAKE A COURSE
           </p>
-          <h5 className='text-3xl font-semibold text-custom-darkBlue'>
+          <h5 className='text-xl font-semibold text-custom-darkBlue max-lg:text-center lg:text-3xl'>
             Acquire a tech skill to transcend your current earning status
           </h5>
           <p>

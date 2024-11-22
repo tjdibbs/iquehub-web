@@ -7,6 +7,7 @@ import { ChevronDownIcon } from 'lucide-react';
 import { Button } from '../ui/button';
 import { cn } from '@/lib/utils';
 import useScrollPosition from '@/hooks/scroll-position';
+import MobileNav from './mobile-nav';
 
 const Header = () => {
   const isScrolled = useScrollPosition();
@@ -20,11 +21,14 @@ const Header = () => {
         )}
       >
         <Container className='flex items-center justify-between gap-16'>
-          <Link href='/' className='text-2xl font-bold hover:text-custom-beige'>
+          <Link
+            href='/'
+            className='text-lg font-bold hover:text-custom-beige md:text-xl lg:text-2xl'
+          >
             IQUEHUB
           </Link>
 
-          <nav>
+          <nav className='hidden lg:block'>
             <ul className='flex items-center gap-10'>
               <li>
                 <Link
@@ -61,7 +65,7 @@ const Header = () => {
             </ul>
           </nav>
 
-          <div className='flex items-center justify-end'>
+          <div className='hidden items-center justify-end lg:flex'>
             <Button
               size='lg'
               className={cn(
@@ -72,6 +76,7 @@ const Header = () => {
               <Link href='/register'>Register</Link>
             </Button>
           </div>
+          <MobileNav />
         </Container>
       </header>
     </Headroom>
