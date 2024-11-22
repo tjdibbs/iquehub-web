@@ -13,6 +13,7 @@ const TakeACourse = () => {
             alt='certificate'
             width={100}
             height={100}
+            priority
             className='aspect-square w-full max-w-full object-contain'
           />
         </div>
