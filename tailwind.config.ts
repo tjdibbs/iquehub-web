@@ -51,6 +51,13 @@ export default {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
+        custom: {
+          beige: '#e7d3ae',
+          darkBlue: '#063354',
+          darkerBlue: '#053354',
+          darkestBlue: '#033153',
+          lightBeige: '#ead5af',
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',
