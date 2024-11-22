@@ -24,7 +24,7 @@ const TakeACourse = () => {
           <h5 className='text-xl font-semibold text-custom-darkBlue max-lg:text-center lg:text-3xl'>
             Acquire a tech skill to transcend your current earning status
           </h5>
-          <p>
+          <p className='max-lg:text-sm'>
             We provide high-quality and affordable technology training to meet
             our students’ needs. Also, we ensure all our students are equipped
             with the necessary tech skills for related work opportunities at the

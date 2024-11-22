@@ -28,7 +28,7 @@ const Features = () => {
                   ][index]
                 }
               </h2>
-              <p>
+              <p className='max-lg:text-sm'>
                 {
                   [
                     'Tech is the future of work. Learn an in-demand skill today and be equipped for the tech ecosystem. In addition, you would get trained in soft skills and entrepreneurship',

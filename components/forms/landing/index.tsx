@@ -47,7 +47,12 @@ const HeroForm = () => {
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input type='text' placeholder='First Name' {...field} />
+                  <Input
+                    type='text'
+                    placeholder='First Name'
+                    className='max-lg:placeholder:text-sm'
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -59,7 +64,12 @@ const HeroForm = () => {
             render={({ field }) => (
               <FormItem>
                 <FormControl>
-                  <Input type='text' placeholder='Last Name' {...field} />
+                  <Input
+                    type='text'
+                    placeholder='Last Name'
+                    className='max-lg:placeholder:text-sm'
+                    {...field}
+                  />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -72,7 +82,12 @@ const HeroForm = () => {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input type='email' placeholder='Email Address' {...field} />
+                <Input
+                  type='email'
+                  placeholder='Email Address'
+                  className='max-lg:placeholder:text-sm'
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -84,7 +99,12 @@ const HeroForm = () => {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input type='text' placeholder='Phone Number' {...field} />
+                <Input
+                  type='text'
+                  placeholder='Phone Number'
+                  className='max-lg:placeholder:text-sm'
+                  {...field}
+                />
               </FormControl>
               <FormMessage />
             </FormItem>

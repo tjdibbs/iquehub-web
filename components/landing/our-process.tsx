@@ -27,7 +27,7 @@ const OurProcess = () => {
                   className='w-full object-contain'
                 />
               </div>
-              <p className='w-full text-center'>
+              <p className='w-full text-center max-lg:text-sm'>
                 {
                   [
                     `In 24 weeks, you’ll be a professional Fullstack developer, able to

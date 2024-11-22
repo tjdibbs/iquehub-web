@@ -8,10 +8,10 @@ const NeedHelp = () => {
         <div className='rounded-lg bg-custom-darkBlue p-8'>
           <div className='mx-auto flex max-w-2xl flex-col gap-8 text-center'>
             <div className='space-y-2'>
-              <p>Need help choosing a course?</p>
+              <p className='max-lg:text-sm'>Need help choosing a course?</p>
               <h6 className='text-2xl font-bold'>Talk To An Expert</h6>
             </div>
-            <p>
+            <p className='max-lg:text-sm'>
               Are you indecisive about what course to choose? Would you like to
               talk to a Tech expert over any tech related issue? We have
               professionals in place who are ready and willing to be of help.

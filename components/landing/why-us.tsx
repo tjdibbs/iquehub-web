@@ -37,7 +37,7 @@ const WhyUs = () => {
                     ][index]
                   }
                 </h3>
-                <p className='leading-normal text-gray-500'>
+                <p className='leading-normal text-gray-500 max-lg:text-sm'>
                   {
                     [
                       'We provide exceptional learning facilities with comfortable, en-suite classrooms and high-speed internet',

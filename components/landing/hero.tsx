@@ -22,7 +22,7 @@ const Hero = () => {
           <h2 className='text-2xl font-bold leading-normal tracking-wide text-white md:text-3xl lg:text-5xl'>
             Full Stack Web Development
           </h2>
-          <p>
+          <p className='max-lg:text-sm'>
             Become a professional Fullstack developer! Learn HTML, CSS,
             JavaScript, React, MongoDB, Express, and hosting on Vercel while
             building impressive portfolios.
