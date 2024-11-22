@@ -25,7 +25,7 @@ const Header = () => {
             href='/'
             className='text-lg font-bold hover:text-custom-beige md:text-xl lg:text-2xl'
           >
-            IQUEHUB
+            iQiQUE
           </Link>
 
           <nav className='hidden lg:block'>

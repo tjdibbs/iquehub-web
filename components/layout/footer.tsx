@@ -16,10 +16,13 @@ const Footer = () => {
     <footer className='space-y-8 bg-custom-darkBlue pt-12 text-white'>
       <Container className='flex flex-col items-start gap-16 lg:flex-row'>
         <div className='flex-1 space-y-4'>
-          <Link href='/' className='text-2xl font-bold hover:text-custom-beige'>
-            IQUEHUB
+          <Link
+            href='/'
+            className='text-lg font-bold hover:text-custom-beige md:text-xl lg:text-2xl'
+          >
+            iQiQUE
           </Link>
-          <p className='text-sm'>1, Iquehub Street, Lagos, Nigeria</p>
+          <p className='text-sm'>1, iQiQUE Street, Lagos, Nigeria</p>
         </div>
         <div className='flex-1 space-y-4'>
           <h6 className='text-lg font-semibold'>Courses</h6>
@@ -73,7 +76,7 @@ const Footer = () => {
         <Separator />
       </Container>
       <Container className='flex flex-col items-center justify-between gap-4 pb-4 lg:flex-row'>
-        <p>&copy; {new Date().getFullYear()} Iquehub. All rights reserved</p>
+        <p>&copy; {new Date().getFullYear()} iQiQUE. All rights reserved</p>
         <div className='flex items-center gap-4'>
           <Link href='/'>
             <TwitterIcon className='h-5 w-5 text-gray-50 hover:text-custom-beige' />

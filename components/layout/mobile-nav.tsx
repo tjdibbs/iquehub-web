@@ -2,7 +2,7 @@
 
 import { cn } from '@/lib/utils';
 import { ChevronDownIcon, MenuIcon, XIcon } from 'lucide-react';
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useState } from 'react';
 import Container from '../shared/container';
 import Link from 'next/link';
 import { Button } from '../ui/button';
@@ -10,18 +10,6 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 const MobileNav = () => {
   const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    if (open) {
-      document.body.style.overflowY = 'hidden';
-    } else {
-      document.body.style.overflowY = 'auto';
-    }
-
-    return () => {
-      document.body.style.overflowY = 'auto';
-    };
-  }, [open]);
 
   return (
     <Fragment>
