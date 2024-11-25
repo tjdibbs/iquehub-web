@@ -1,12 +1,13 @@
 'use client';
 
 import { cn } from '@/lib/utils';
-import { ChevronDownIcon, MenuIcon, XIcon } from 'lucide-react';
+import { MenuIcon, XIcon } from 'lucide-react';
 import { Fragment, useState } from 'react';
 import Container from '../shared/container';
 import Link from 'next/link';
 import { Button } from '../ui/button';
 import { AnimatePresence, motion } from 'framer-motion';
+import ProgrammesPopover from './programmes-popover';
 
 const MobileNav = () => {
   const [open, setOpen] = useState(false);
@@ -48,19 +49,14 @@ const MobileNav = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      href='/courses'
-                      className='inline-flex items-center gap-1 font-medium hover:text-custom-darkBlue hover:underline'
-                    >
-                      Courses <ChevronDownIcon className='h-4 w-4' />
-                    </Link>
+                    <ProgrammesPopover />
                   </li>
                   <li>
                     <Link
-                      href='/faq'
+                      href='/community'
                       className='font-medium hover:text-custom-darkBlue hover:underline'
                     >
-                      FAQ
+                      Community
                     </Link>
                   </li>
                   <li>
@@ -73,8 +69,11 @@ const MobileNav = () => {
                   </li>
                 </ul>
                 <div className='flex items-center justify-center'>
-                  <Button className='hover:text-custom-darkBlue hover:shadow'>
-                    Register
+                  <Button
+                    className='bg-custom-darkBlue text-white hover:bg-white hover:text-custom-darkBlue hover:shadow'
+                    asChild
+                  >
+                    <Link href='/enroll'>Enroll Now</Link>
                   </Button>
                 </div>
               </Container>

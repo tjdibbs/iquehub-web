@@ -3,11 +3,11 @@
 import Headroom from 'react-headroom';
 import Container from '../shared/container';
 import Link from 'next/link';
-import { ChevronDownIcon } from 'lucide-react';
 import { Button } from '../ui/button';
 import { cn } from '@/lib/utils';
 import useScrollPosition from '@/hooks/scroll-position';
 import MobileNav from './mobile-nav';
+import ProgrammesPopover from './programmes-popover';
 
 const Header = () => {
   const isScrolled = useScrollPosition();
@@ -39,19 +39,14 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  href='/courses'
-                  className='inline-flex items-center gap-1 font-medium hover:text-custom-beige'
-                >
-                  Courses <ChevronDownIcon className='h-4 w-4' />
-                </Link>
+                <ProgrammesPopover />
               </li>
               <li>
                 <Link
                   href='/faq'
                   className='font-medium hover:text-custom-beige'
                 >
-                  FAQ
+                  Community
                 </Link>
               </li>
               <li>
@@ -69,11 +64,11 @@ const Header = () => {
             <Button
               size='lg'
               className={cn(
-                'bg-custom-beige text-custom-darkBlue hover:bg-custom-beige/70',
+                'bg-custom-beige text-custom-darkBlue hover:bg-white hover:text-custom-darkBlue hover:shadow',
               )}
               asChild
             >
-              <Link href='/register'>Register</Link>
+              <Link href='/enroll'>Enroll Now</Link>
             </Button>
           </div>
           <MobileNav />
