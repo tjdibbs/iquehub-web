@@ -8,15 +8,18 @@ import { cn } from '@/lib/utils';
 import useScrollPosition from '@/hooks/scroll-position';
 import MobileNav from './mobile-nav';
 import ProgrammesPopover from './programmes-popover';
+import { XIcon } from 'lucide-react';
+import { useState } from 'react';
 
 const Header = () => {
+  const [open, setOpen] = useState(true);
   const isScrolled = useScrollPosition();
 
   return (
     <Headroom className='z-[99]'>
       <header
         className={cn(
-          'py-4 text-white',
+          'relative py-4 text-white',
           isScrolled ? 'bg-custom-darkBlue' : 'bg-transparent',
         )}
       >
@@ -73,6 +76,26 @@ const Header = () => {
           </div>
           <MobileNav />
         </Container>
+        {isScrolled && open && (
+          <section className='absolute left-0 top-full w-full bg-custom-beige text-custom-darkBlue'>
+            <Container className='relative flex items-center gap-3 py-2 text-center'>
+              <div className='hidden w-5 lg:block' />
+              <p className='lg:flex-1'>
+                All programmes are now open for registration{' '}
+                <Link href='/programmes' className='underline hover:text-black'>
+                  Browse Programmes
+                </Link>
+              </p>
+              <Button
+                size='icon'
+                variant='ghost'
+                onClick={() => setOpen(false)}
+              >
+                <XIcon className='h-5 w-5' />
+              </Button>
+            </Container>
+          </section>
+        )}
       </header>
     </Headroom>
   );
