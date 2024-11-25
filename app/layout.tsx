@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Lato } from 'next/font/google';
 import Footer from '@/components/layout/footer';
-import Header from '@/components/layout/app-header';
 import NextTopLoader from 'nextjs-toploader';
 
 const lato = Lato({ subsets: ['latin'], weight: ['400', '700', '900'] });
@@ -19,11 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body
-        className={`${lato.className} grid min-h-screen grid-rows-[auto_1fr_auto] overflow-x-hidden antialiased`}
-      >
+      <body className={`${lato.className} antialiased`}>
         <NextTopLoader shadow={false} color='#e7d3ae' showSpinner={false} />
-        <Header />
         {children}
         <Footer />
       </body>

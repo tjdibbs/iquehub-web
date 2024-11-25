@@ -9,3 +9,8 @@ export const PreloadResources = () => {
   ReactDOM.preload('/get-mentored.png', { as: 'image' });
   return null;
 };
+
+export const PreloadContactResources = () => {
+  ReactDOM.preload('/contact.png', { as: 'image' });
+  return null;
+};
