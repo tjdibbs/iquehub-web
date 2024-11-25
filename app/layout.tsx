@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Lato } from 'next/font/google';
-import { PreloadResources } from '@/lib/preload-resources';
 import Footer from '@/components/layout/footer';
 
 const lato = Lato({ subsets: ['latin'], weight: ['400', '700', '900'] });
@@ -19,7 +18,6 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${lato.className} antialiased`}>
-        <PreloadResources />
         {children}
         <Footer />
       </body>

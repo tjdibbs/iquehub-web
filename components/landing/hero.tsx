@@ -5,7 +5,7 @@ import { Input } from '../ui/input';
 import { Button } from '../ui/button';
 import { cn } from '@/lib/utils';
 const style: CSSProperties = {
-  backgroundImage: `linear-gradient(rgba(6, 51, 84, 0.85), rgba(6, 51, 84, 0.85)), url('/hero.jpg')`,
+  backgroundImage: `linear-gradient(rgba(6, 51, 84, 0.90), rgba(6, 51, 84, 0.90)), url('/hero.png')`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
