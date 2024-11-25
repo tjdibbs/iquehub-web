@@ -10,6 +10,7 @@ import MobileNav from './mobile-nav';
 import ProgrammesPopover from './programmes-popover';
 import { XIcon } from 'lucide-react';
 import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const Header = () => {
   const [open, setOpen] = useState(true);
@@ -76,26 +77,36 @@ const Header = () => {
           </div>
           <MobileNav />
         </Container>
-        {isScrolled && open && (
-          <section className='absolute left-0 top-full w-full bg-custom-beige text-custom-darkBlue'>
-            <Container className='relative flex items-center gap-3 py-2 text-center'>
-              <div className='hidden w-5 lg:block' />
-              <p className='lg:flex-1'>
-                All programmes are now open for registration{' '}
-                <Link href='/programmes' className='underline hover:text-black'>
-                  Browse Programmes
-                </Link>
-              </p>
-              <Button
-                size='icon'
-                variant='ghost'
-                onClick={() => setOpen(false)}
-              >
-                <XIcon className='h-5 w-5' />
-              </Button>
-            </Container>
-          </section>
-        )}
+        <AnimatePresence>
+          {isScrolled && open && (
+            <motion.section
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ type: 'tween' }}
+              className='absolute left-0 top-full w-full bg-custom-beige text-custom-darkBlue'
+            >
+              <Container className='relative flex items-center gap-3 py-2 text-center'>
+                <div className='hidden w-5 lg:block' />
+                <p className='lg:flex-1'>
+                  All programmes are now open for registration{' '}
+                  <Link
+                    href='/programmes'
+                    className='underline hover:text-black'
+                  >
+                    Browse Programmes
+                  </Link>
+                </p>
+                <Button
+                  size='icon'
+                  variant='ghost'
+                  onClick={() => setOpen(false)}
+                >
+                  <XIcon className='h-5 w-5' />
+                </Button>
+              </Container>
+            </motion.section>
+          )}
+        </AnimatePresence>
       </header>
     </Headroom>
   );
