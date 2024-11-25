@@ -72,7 +72,7 @@ const Header = () => {
               )}
               asChild
             >
-              <Link href='/enroll'>Enroll Now</Link>
+              <Link href='/register'>Enroll Now</Link>
             </Button>
           </div>
           <MobileNav />

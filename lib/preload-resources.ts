@@ -14,3 +14,8 @@ export const PreloadContactResources = () => {
   ReactDOM.preload('/contact.png', { as: 'image' });
   return null;
 };
+
+export const PreloadAuthResources = () => {
+  ReactDOM.preload('/girl.png', { as: 'image' });
+  return null;
+};

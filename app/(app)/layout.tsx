@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import '../globals.css';
 import { Lato } from 'next/font/google';
 import Footer from '@/components/layout/footer';
 import NextTopLoader from 'nextjs-toploader';
