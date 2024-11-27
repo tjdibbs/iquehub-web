@@ -1,4 +1,5 @@
 import AboutHero from '@/components/about/hero';
+import NeedHelp from '@/components/landing/need-help';
 import Container from '@/components/shared/container';
 import { PreloadAboutResources } from '@/lib/preload-resources';
 import Image from 'next/image';
@@ -49,6 +50,7 @@ export default function Page() {
           </div>
         </Container>
       </section>
+      <NeedHelp />
     </main>
   );
 }
