@@ -3,6 +3,7 @@ import '../globals.css';
 import { Lato } from 'next/font/google';
 import Footer from '@/components/layout/footer';
 import NextTopLoader from 'nextjs-toploader';
+import WhatsAppLink from '@/components/shared/whatsapp-link';
 
 const lato = Lato({ subsets: ['latin'], weight: ['400', '700', '900'] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={`${lato.className} antialiased`}>
         <NextTopLoader shadow={false} color='#e7d3ae' showSpinner={false} />
         {children}
+        <WhatsAppLink />
         <Footer />
       </body>
     </html>
