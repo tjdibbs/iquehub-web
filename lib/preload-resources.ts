@@ -19,3 +19,9 @@ export const PreloadAuthResources = () => {
   ReactDOM.preload('/girl.png', { as: 'image' });
   return null;
 };
+
+export const PreloadAboutResources = () => {
+  ReactDOM.preload('/about.png', { as: 'image' });
+  ReactDOM.preload('/team.png', { as: 'image' });
+  return null;
+};

@@ -11,10 +11,13 @@ import ProgrammesPopover from './programmes-popover';
 import { XIcon } from 'lucide-react';
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
   const [open, setOpen] = useState(true);
   const isScrolled = useScrollPosition();
+
+  const pathname = usePathname();
 
   return (
     <Headroom className='z-[99]'>
@@ -37,7 +40,10 @@ const Header = () => {
               <li>
                 <Link
                   href='/about'
-                  className='font-medium hover:text-custom-beige'
+                  className={cn(
+                    'font-medium hover:text-custom-beige',
+                    pathname === '/about' && 'text-custom-beige',
+                  )}
                 >
                   About us
                 </Link>
@@ -48,7 +54,10 @@ const Header = () => {
               <li>
                 <Link
                   href='/faq'
-                  className='font-medium hover:text-custom-beige'
+                  className={cn(
+                    'font-medium hover:text-custom-beige',
+                    pathname.includes('community') && 'text-custom-beige',
+                  )}
                 >
                   Community
                 </Link>
@@ -56,7 +65,10 @@ const Header = () => {
               <li>
                 <Link
                   href='/contact'
-                  className='font-medium hover:text-custom-beige'
+                  className={cn(
+                    'font-medium hover:text-custom-beige',
+                    pathname === '/contact' && 'text-custom-beige',
+                  )}
                 >
                   Contact us
                 </Link>
@@ -87,7 +99,7 @@ const Header = () => {
             >
               <Container className='relative flex items-center gap-3 py-2 text-center'>
                 <div className='hidden w-5 lg:block' />
-                <p className='lg:flex-1'>
+                <p className='max-lg:text-sm lg:flex-1'>
                   All programmes are now open for registration{' '}
                   <Link
                     href='/programmes'

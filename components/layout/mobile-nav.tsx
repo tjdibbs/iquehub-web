@@ -73,7 +73,7 @@ const MobileNav = () => {
                     className='bg-custom-darkBlue text-white hover:bg-white hover:text-custom-darkBlue hover:shadow'
                     asChild
                   >
-                    <Link href='/enroll'>Enroll Now</Link>
+                    <Link href='/register'>Enroll Now</Link>
                   </Button>
                 </div>
               </Container>
