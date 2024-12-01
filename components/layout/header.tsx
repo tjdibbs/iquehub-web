@@ -94,6 +94,7 @@ const Header = () => {
             <motion.section
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0}}
               transition={{ type: 'tween' }}
               className='absolute left-0 top-full w-full bg-custom-beige text-custom-darkBlue'
             >
