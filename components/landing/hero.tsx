@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <section
       style={style}
-      className='grid min-h-screen grid-rows-[auto_1fr] gap-y-8'
+      className='grid grid-rows-[auto_1fr] gap-y-8 max-md:min-h-screen md:h-screen md:max-h-[700px]'
     >
       <Header />
       <Container className='jusify-center flex items-center gap-12 pb-8 text-white'>

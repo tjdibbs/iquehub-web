@@ -25,3 +25,14 @@ export const PreloadAboutResources = () => {
   ReactDOM.preload('/team.png', { as: 'image' });
   return null;
 };
+
+export const PreloadProgrammesResources = () => {
+  ReactDOM.preload('/programmes.png', { as: 'image' });
+  ReactDOM.preload('/frontend.png', { as: 'image' });
+  ReactDOM.preload('/full-stack.png', { as: 'image' });
+  ReactDOM.preload('/digital-marketing.png', { as: 'image' });
+  ReactDOM.preload('/data-science.png', { as: 'image' });
+  ReactDOM.preload('/cyber-security.png', { as: 'image' });
+  ReactDOM.preload('/ui-ux.png', { as: 'image' });
+  return null;
+};

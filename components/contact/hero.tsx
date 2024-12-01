@@ -11,7 +11,10 @@ const style: CSSProperties = {
 
 const ContactHero = () => {
   return (
-    <div style={style} className='grid min-h-screen grid-rows-[auto_1fr]'>
+    <div
+      style={style}
+      className='grid grid-rows-[auto_1fr] max-md:min-h-screen md:h-screen md:max-h-[700px]'
+    >
       <Header />
       <Container className='jusify-center flex items-center gap-12 pb-8 text-white'>
         <div className='mx-auto space-y-6 text-center lg:max-w-4xl xl:max-w-5xl'>
