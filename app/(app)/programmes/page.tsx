@@ -28,6 +28,7 @@ export default function Page() {
                   alt={programme.title}
                   height={100}
                   width={100}
+                  priority
                   className='w-full object-cover max-md:h-full md:aspect-square md:rounded-md'
                 />
               </Link>

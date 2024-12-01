@@ -30,7 +30,7 @@ const ProgrammesPopover = () => {
           {PROGRAMMES.map(programme => (
             <li key={programme.title}>
               <Link
-                href={`/programmes/${programme.slug}`}
+                href={`/programmes`}
                 className='block space-y-2 rounded-md p-3 transition-colors duration-200 hover:bg-gray-100'
               >
                 <h6 className='text-sm font-semibold text-gray-800'>
