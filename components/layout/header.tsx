@@ -32,7 +32,7 @@ const Header = () => {
             href='/'
             className='text-lg font-bold hover:text-custom-beige md:text-xl lg:text-2xl'
           >
-            iQiQUE
+            IQUE HUB
           </Link>
 
           <nav className='hidden lg:block'>
@@ -41,7 +41,7 @@ const Header = () => {
                 <Link
                   href='/about'
                   className={cn(
-                    'font-medium hover:text-custom-beige',
+                    'font-medium uppercase hover:text-custom-beige',
                     pathname === '/about' && 'text-custom-beige',
                   )}
                 >
@@ -55,7 +55,7 @@ const Header = () => {
                 <Link
                   href='/faq'
                   className={cn(
-                    'font-medium hover:text-custom-beige',
+                    'font-medium uppercase hover:text-custom-beige',
                     pathname.includes('community') && 'text-custom-beige',
                   )}
                 >
@@ -64,9 +64,20 @@ const Header = () => {
               </li>
               <li>
                 <Link
+                  href='/nextgencoder'
+                  className={cn(
+                    'font-medium uppercase hover:text-custom-beige',
+                    pathname.includes('nextgencoder') && 'text-custom-beige',
+                  )}
+                >
+                  NextGenCoder
+                </Link>
+              </li>
+              <li>
+                <Link
                   href='/contact'
                   className={cn(
-                    'font-medium hover:text-custom-beige',
+                    'font-medium uppercase hover:text-custom-beige',
                     pathname === '/contact' && 'text-custom-beige',
                   )}
                 >
@@ -94,7 +105,7 @@ const Header = () => {
             <motion.section
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0}}
+              exit={{ opacity: 0 }}
               transition={{ type: 'tween' }}
               className='absolute left-0 top-full w-full bg-custom-beige text-custom-darkBlue'
             >

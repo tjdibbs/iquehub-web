@@ -16,19 +16,17 @@ const Hero = () => {
   return (
     <section
       style={style}
-      className='grid grid-rows-[auto_1fr] gap-y-8 max-md:min-h-screen md:h-screen md:max-h-[700px]'
+      className='grid grid-rows-[auto_1fr] gap-y-8 max-md:min-h-screen md:h-screen md:max-h-[600px]'
     >
       <Header />
       <Container className='jusify-center flex items-center gap-12 pb-8 text-white'>
         <div className='mx-auto space-y-8 text-center lg:max-w-4xl xl:max-w-5xl'>
           <div className='space-y-6'>
             <h2 className='text-7xl font-bold leading-snug tracking-wide max-lg:text-6xl max-md:text-4xl'>
-              Unlock Your Tech Potentials
+            Where Passion Meets Innovation
             </h2>
             <p className='lg:text-base'>
-              Become a professional Fullstack developer! Learn HTML, CSS,
-              JavaScript, React, MongoDB, Express, and hosting on Vercel while
-              building impressive portfolios.
+            Unlock your potentials today
             </p>
           </div>
           <form className='mx-auto flex w-full max-w-md items-center gap-0'>
@@ -43,7 +41,7 @@ const Hero = () => {
                 'rounded-bl-none rounded-tl-none bg-custom-beige text-custom-darkBlue hover:bg-white hover:text-custom-darkBlue hover:shadow',
               )}
             >
-              Explore
+              Explore Programmes
             </Button>
           </form>
         </div>

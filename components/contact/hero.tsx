@@ -13,7 +13,7 @@ const ContactHero = () => {
   return (
     <div
       style={style}
-      className='grid grid-rows-[auto_1fr] max-md:min-h-screen md:h-screen md:max-h-[700px]'
+      className='grid grid-rows-[auto_1fr] max-md:min-h-screen md:h-screen md:max-h-[600px]'
     >
       <Header />
       <Container className='jusify-center flex items-center gap-12 pb-8 text-white'>

@@ -17,7 +17,7 @@ const ProgrammesPopover = () => {
         <Button
           variant='ghost'
           className={cn(
-            'inline-flex items-center gap-1 text-base font-medium text-white transition-colors duration-200 hover:bg-gray-100 hover:bg-transparent hover:text-custom-beige max-lg:text-black',
+            'inline-flex items-center gap-1 text-base font-medium text-white transition-colors duration-200 hover:bg-gray-100 hover:bg-transparent uppercase hover:text-custom-beige max-lg:text-black',
             pathname.includes('programmes') && 'text-custom-beige',
           )}
         >

@@ -39,3 +39,8 @@ export const PreloadProgrammesResources = () => {
   ReactDOM.preload('/ui-ux.png', { as: 'image' });
   return null;
 };
+
+export const PreloadNextGenCoderResources = () => {
+  ReactDOM.preload('/nextgencoder.jpg', { as: 'image', fetchPriority: 'high' });
+  return null
+};

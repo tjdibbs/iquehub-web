@@ -43,7 +43,7 @@ const MobileNav = () => {
                   <li>
                     <Link
                       href='/about'
-                      className='font-medium hover:text-custom-darkBlue hover:underline'
+                      className='font-medium uppercase hover:text-custom-darkBlue hover:underline'
                     >
                       About us
                     </Link>
@@ -54,15 +54,23 @@ const MobileNav = () => {
                   <li>
                     <Link
                       href='/community'
-                      className='font-medium hover:text-custom-darkBlue hover:underline'
+                      className='font-medium uppercase hover:text-custom-darkBlue hover:underline'
                     >
                       Community
                     </Link>
                   </li>
                   <li>
                     <Link
+                      href='/nextgencoder'
+                      className='font-medium uppercase hover:text-custom-darkBlue hover:underline'
+                    >
+                      NextGenCoder
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href='/contact'
-                      className='font-medium hover:text-custom-darkBlue hover:underline'
+                      className='font-medium uppercase hover:text-custom-darkBlue hover:underline'
                     >
                       Contact us
                     </Link>

@@ -20,9 +20,9 @@ const Footer = () => {
             href='/'
             className='text-lg font-bold hover:text-custom-beige md:text-xl lg:text-2xl'
           >
-            iQiQUE
+            IQUE HUB
           </Link>
-          <p className='text-sm'>1, iQiQUE Street, Lagos, Nigeria</p>
+          <p className='text-sm'>1, IQUE HUB Street, Lagos, Nigeria</p>
         </div>
         <div className='flex-1 space-y-4'>
           <h6 className='text-lg font-semibold'>Courses</h6>
@@ -76,7 +76,7 @@ const Footer = () => {
         <Separator />
       </Container>
       <Container className='flex flex-col items-center justify-between gap-4 pb-4 lg:flex-row'>
-        <p>&copy; {new Date().getFullYear()} iQiQUE. All rights reserved</p>
+        <p>&copy; {new Date().getFullYear()} IQUE HUB. All rights reserved</p>
         <div className='flex items-center gap-4'>
           <Link href='/'>
             <TwitterIcon className='h-5 w-5 text-gray-50 hover:text-custom-beige' />
