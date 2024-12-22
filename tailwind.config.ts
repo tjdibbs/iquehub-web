@@ -52,7 +52,7 @@ export default {
           '5': 'hsl(var(--chart-5))',
         },
         custom: {
-          beige: '#e7d3ae',
+          beige: '#ECD5B3',
           darkBlue: '#063354',
           darkerBlue: '#053354',
           darkestBlue: '#033153',

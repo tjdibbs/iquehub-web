@@ -37,21 +37,15 @@ export default function Page() {
                   <h5 className='text-xl font-medium text-custom-darkBlue lg:text-2xl'>
                     Lagos, Nigeria
                   </h5>
-                  <p className='text-gray-500'>
-                    4, IQhub street, Lagos, Nigeria
-                  </p>
+                  <p className='text-gray-500'>41 Diya street Gbagada, Lagos</p>
                 </div>
                 <div className='space-y-1'>
                   <h5 className='text-xl font-medium text-custom-darkBlue lg:text-2xl'>
                     Call or WhatsApp
                   </h5>
                   <p className='text-gray-500'>
-                    <span className='font-semibold'>Founder</span> +234 123 456
-                    789
-                  </p>
-                  <p className='text-gray-500'>
-                    <span className='font-semibold'>Founder</span> +234 123 456
-                    789
+                    <span className='font-semibold'>Founder</span> +234 906 332
+                    1869
                   </p>
                 </div>
                 <a

@@ -6,7 +6,7 @@ const WhyUs = () => {
     <section className='bg-custom-beige/20'>
       <Container className='space-y-12 py-16'>
         <div className='space-y-6 text-center'>
-          <p className='text-sm font-medium'>Why IQUE HUB?</p>
+          <p className='text-sm font-medium'>Why IQ HUB?</p>
           <h2 className='text-center text-xl font-bold text-custom-darkBlue lg:text-3xl'>
             We Are Customer-Centric
           </h2>

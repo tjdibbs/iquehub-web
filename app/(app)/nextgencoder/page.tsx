@@ -6,6 +6,11 @@ export default function Page() {
     <main>
       <PreloadNextGenCoderResources />
       <NextGenCoderHero />
+      <section className='space-y-12 py-8'>
+        <h2 className='text-center text-xl font-bold text-custom-darkBlue lg:text-3xl'>
+          Programmes For Kids
+        </h2>
+      </section>
     </main>
   );
 }

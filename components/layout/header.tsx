@@ -12,6 +12,7 @@ import { XIcon } from 'lucide-react';
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
+import Logo from '../shared/logo';
 
 const Header = () => {
   const [open, setOpen] = useState(true);
@@ -28,12 +29,7 @@ const Header = () => {
         )}
       >
         <Container className='flex items-center justify-between gap-16'>
-          <Link
-            href='/'
-            className='text-lg font-bold hover:text-custom-beige md:text-xl lg:text-2xl'
-          >
-            IQUE HUB
-          </Link>
+          <Logo />
 
           <nav className='hidden lg:block'>
             <ul className='flex items-center gap-10'>

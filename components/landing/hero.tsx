@@ -23,11 +23,9 @@ const Hero = () => {
         <div className='mx-auto space-y-8 text-center lg:max-w-4xl xl:max-w-5xl'>
           <div className='space-y-6'>
             <h2 className='text-7xl font-bold leading-snug tracking-wide max-lg:text-6xl max-md:text-4xl'>
-            Where Passion Meets Innovation
+              Where Passion Meets Innovation
             </h2>
-            <p className='lg:text-base'>
-            Unlock your potentials today
-            </p>
+            <p className='lg:text-base'>Unlock your potentials today</p>
           </div>
           <form className='mx-auto flex w-full max-w-md items-center gap-0'>
             <Input

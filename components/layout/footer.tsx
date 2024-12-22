@@ -4,25 +4,21 @@ import { Separator } from '../ui/separator';
 import { Input } from '../ui/input';
 import { Button } from '../ui/button';
 import { cn } from '@/lib/utils';
+import Logo from '../shared/logo';
 import {
-  FacebookIcon,
-  InstagramIcon,
-  LinkedinIcon,
-  TwitterIcon,
-} from 'lucide-react';
+  LinkedinOutlined,
+  XOutlined,
+  FacebookOutlined,
+  InstagramOutlined,
+} from '@ant-design/icons';
 
 const Footer = () => {
   return (
     <footer className='space-y-8 bg-custom-darkBlue pt-12 text-white'>
       <Container className='flex flex-col items-start gap-16 lg:flex-row'>
         <div className='flex-1 space-y-4'>
-          <Link
-            href='/'
-            className='text-lg font-bold hover:text-custom-beige md:text-xl lg:text-2xl'
-          >
-            IQUE HUB
-          </Link>
-          <p className='text-sm'>1, IQUE HUB Street, Lagos, Nigeria</p>
+          <Logo />
+          <p className='text-sm'>41 Diya street Gbagada, Lagos</p>
         </div>
         <div className='flex-1 space-y-4'>
           <h6 className='text-lg font-semibold'>Courses</h6>
@@ -79,16 +75,16 @@ const Footer = () => {
         <p>&copy; {new Date().getFullYear()} IQUE HUB. All rights reserved</p>
         <div className='flex items-center gap-4'>
           <Link href='/'>
-            <TwitterIcon className='h-5 w-5 text-gray-50 hover:text-custom-beige' />
+            <XOutlined className='text-2xl text-gray-50 hover:text-custom-beige' />
           </Link>
           <Link href='/'>
-            <LinkedinIcon className='h-5 w-5 text-gray-50 hover:text-custom-beige' />
+            <LinkedinOutlined className='text-2xl text-gray-50 hover:text-custom-beige' />
           </Link>
           <Link href='/'>
-            <FacebookIcon className='h-5 w-5 text-gray-50 hover:text-custom-beige' />
+            <FacebookOutlined className='text-2xl text-gray-50 hover:text-custom-beige' />
           </Link>
           <Link href='/'>
-            <InstagramIcon className='h-5 w-5 text-gray-50 hover:text-custom-beige' />
+            <InstagramOutlined className='text-2xl text-gray-50 hover:text-custom-beige' />
           </Link>
         </div>
       </Container>

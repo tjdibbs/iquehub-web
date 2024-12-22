@@ -25,7 +25,7 @@ export default function Page() {
               KNOW US MORE
             </h5>
             <h2 className='text-3xl font-semibold text-custom-darkBlue max-lg:text-center lg:text-5xl'>
-              About Ique Hub
+              About IQ Hub
             </h2>
             <div className='space-y-6'>
               <p className='leading-normal'>
@@ -73,7 +73,7 @@ export default function Page() {
               <h4 className='text-lg font-semibold text-primary md:text-xl'>
                 Flexibility
               </h4>
-              <p className="max-md:text-center">
+              <p className='max-md:text-center'>
                 We provide weekday, weekend, and online learning options,
                 allowing you to tailor your education to your schedule and pace
                 for maximum convenience.
@@ -84,7 +84,7 @@ export default function Page() {
               <h4 className='text-lg font-semibold text-primary md:text-xl'>
                 Conducive Environment
               </h4>
-              <p className="max-md:text-center">
+              <p className='max-md:text-center'>
                 We’ve created an inspiring and well-equipped space to ensure a
                 seamless and enjoyable learning journey.
               </p>
@@ -94,7 +94,7 @@ export default function Page() {
               <h4 className='text-lg font-semibold text-primary md:text-xl'>
                 Affordable Tuition Fee
               </h4>
-              <p className="max-md:text-center">
+              <p className='max-md:text-center'>
                 We have initiated all of our programs to be affordable, and our
                 payment method can be paid in three installments. Terms &
                 conditions applied.
@@ -105,7 +105,7 @@ export default function Page() {
               <h4 className='text-lg font-semibold text-primary md:text-xl'>
                 Learning & Development
               </h4>
-              <p className="max-md:text-center">
+              <p className='max-md:text-center'>
                 Join a community of ambitious and innovative individuals,
                 fostering collaboration and professional networking
                 opportunities that extend beyond the classroom.
@@ -116,7 +116,7 @@ export default function Page() {
               <h4 className='text-lg font-semibold text-primary md:text-xl'>
                 Community
               </h4>
-              <p className="max-md:text-center">
+              <p className='max-md:text-center'>
                 Join a community of ambitious and innovative individuals,
                 fostering collaboration and professional networking
                 opportunities that extend beyond the classroom.
@@ -127,7 +127,7 @@ export default function Page() {
               <h4 className='text-lg font-semibold text-primary md:text-xl'>
                 Certificates
               </h4>
-              <p className="max-md:text-center">
+              <p className='max-md:text-center'>
                 Upon program completion, receive a certification that validates
                 your skills and enhances your professional credentials.
               </p>
@@ -137,7 +137,7 @@ export default function Page() {
               <h4 className='text-lg font-semibold text-primary md:text-xl'>
                 Internship Opportunities
               </h4>
-              <p className="max-md:text-center">
+              <p className='max-md:text-center'>
                 Gain invaluable hands-on experience through internship
                 placements that bridge the gap between theory and practice,
                 preparing you for real-world challenges in the tech industry.

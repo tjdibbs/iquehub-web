@@ -1,11 +1,10 @@
 import type { Metadata } from 'next';
 import '../globals.css';
-import { Lato } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 import NextTopLoader from 'nextjs-toploader';
-import { PreloadAuthResources } from '@/lib/preload-resources';
-import Image from 'next/image';
+import Footer from '@/components/layout/footer';
 
-const lato = Lato({ subsets: ['latin'], weight: ['400', '700', '900'] });
+const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -19,23 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${lato.className} antialiased`}>
-        <PreloadAuthResources />
+      <body className={`${montserrat.className} antialiased`}>
         <NextTopLoader shadow={false} color='#e7d3ae' showSpinner={false} />
-        <section className='grid-cols-2 lg:grid lg:h-screen'>
-          <div className='relative max-lg:h-64'>
-            <Image
-              src='/girl.png'
-              alt='Girl with laptop'
-              height={300}
-              width={300}
-              className='h-full w-full object-cover'
-              priority
-            />
-            <div className='absolute left-0 top-0 z-50 h-full w-full bg-black/30' />
-          </div>
-          <div>{children}</div>
-        </section>
+        {children}
+        <Footer />
       </body>
     </html>
   );

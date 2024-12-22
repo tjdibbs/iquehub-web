@@ -20,8 +20,15 @@ const NeedHelp = () => {
               <Button
                 size='lg'
                 className='bg-custom-beige text-custom-darkBlue hover:bg-white hover:text-custom-darkBlue hover:shadow'
+                asChild
               >
-                Get Help
+                <a
+                  href='https://api.whatsapp.com/send?phone=2349063321869'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  Get Help
+                </a>
               </Button>
             </div>
           </div>
