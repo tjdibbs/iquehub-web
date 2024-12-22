@@ -10,6 +10,11 @@ body {
   font-size: 16px;
 }
 
+.masonry-column {
+  padding-left: 8px; 
+  background-clip: padding-box;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

@@ -9,7 +9,13 @@ const style: CSSProperties = {
   backgroundRepeat: 'no-repeat',
 };
 
-const ProgrammesHero = () => {
+const ProgrammesHero = ({
+  text = 'Expore Our Programmes',
+  description = "Unlock your potential with our expertly designed courses. From foundational skills to advanced tech expertise, our programmes are tailored to guide you every step of the way. Ready to elevate your career? We're here to support you.",
+}: {
+  text?: string;
+  description?: string;
+}) => {
   return (
     <div
       style={style}
@@ -19,14 +25,9 @@ const ProgrammesHero = () => {
       <Container className='jusify-center flex items-center gap-12 pb-8 text-white'>
         <div className='mx-auto space-y-6 text-center lg:max-w-4xl xl:max-w-5xl'>
           <h2 className='text-7xl font-bold leading-snug tracking-wide max-lg:text-6xl max-md:text-4xl'>
-            Expore Our Programmes
+            {text}
           </h2>
-          <p className='text-center lg:text-base'>
-            Unlock your potential with our expertly designed courses. From
-            foundational skills to advanced tech expertise, our programmes are
-            tailored to guide you every step of the way. Ready to elevate your
-            career? We&apos;re here to support you.
-          </p>
+          <p className='text-center lg:text-base'>{description}</p>
         </div>
       </Container>
     </div>
