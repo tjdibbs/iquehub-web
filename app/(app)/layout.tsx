@@ -64,9 +64,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${montserrat.className} antialiased`}>
+      <body
+        className={`${montserrat.className} grid max-h-screen grid-rows-[1fr_auto] antialiased`}
+      >
         <NextTopLoader shadow={false} color='#e7d3ae' showSpinner={false} />
-        {children}
+        <div>{children}</div>
         <WhatsAppLink />
         <Footer />
       </body>

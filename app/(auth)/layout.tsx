@@ -61,9 +61,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${montserrat.className} antialiased`}>
+      <body className={`${montserrat.className} antialiased grid min-h-screen grid-rows-[1fr_auto]`}>
         <NextTopLoader shadow={false} color='#e7d3ae' showSpinner={false} />
-        {children}
+        <div>{children}</div>
         <Footer />
       </body>
     </html>
