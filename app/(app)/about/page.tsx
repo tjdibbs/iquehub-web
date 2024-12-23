@@ -1,6 +1,7 @@
-import AboutHero from '@/components/about/hero';
+
 import NeedHelp from '@/components/landing/need-help';
 import Container from '@/components/shared/container';
+import PageHero from '@/components/shared/hero';
 import { PreloadAboutResources } from '@/lib/preload-resources';
 import {
   AwardIcon,
@@ -17,7 +18,7 @@ export default function Page() {
   return (
     <main>
       <PreloadAboutResources />
-      <AboutHero />
+      <PageHero text=' Who We Are' description='' imageUrl='/about.png' />
       <section className='py-8'>
         <Container className='grid grid-cols-1 gap-x-12 gap-y-8 lg:grid-cols-2 lg:items-center'>
           <div className='space-y-8 max-lg:order-2 max-lg:text-center'>

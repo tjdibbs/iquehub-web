@@ -1,4 +1,3 @@
-import ProgrammesHero from '@/components/programmes/hero';
 import Container from '@/components/shared/container';
 import Module from './module';
 import {
@@ -12,14 +11,18 @@ import {
   MODULE_8,
   MODULE_9,
 } from './data';
+import PageHero from '@/components/shared/hero';
 
 const Page = () => {
   return (
     <main>
-      <ProgrammesHero
+      <PageHero
         text='Frontend Development'
         description='IQ Hub Frontend Development programme is beginner-friendly and project based. It is designed to help participants become job-ready'
         showBtn={true}
+        linkHref='/register'
+        linkText='Get Started'
+        imageUrl='/frontend.png'
       />
       <section className='space-y-12 py-8'>
         <div className='space-y-8'>

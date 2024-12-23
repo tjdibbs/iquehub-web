@@ -1,3 +1,27 @@
+export const NEXTGENCODER = [
+  {
+    title: 'Web Development',
+    description:
+      'Learn the skills needed to become a web developer. This course covers HTML, CSS, JavaScript, and more.',
+    slug: 'web-development',
+    image: '/child1.png',
+  },
+  {
+    title: 'Game Development',
+    description:
+      'Create your own games with our Game Development course. Learn to code in Unity and build interactive experiences.',
+    slug: 'game-development',
+    image: '/child2.png',
+  },
+  {
+    title: 'Robotics',
+    description:
+      'Discover the world of robotics with our Robotics course. Learn to build and program robots to perform tasks.',
+    slug: 'robotics',
+    image: '/child3.png',
+  },
+];
+
 export const PROGRAMMES = [
   {
     title: 'Frontend Development',

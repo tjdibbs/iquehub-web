@@ -10,7 +10,7 @@ const WhatsAppLink = () => {
       target='_blank'
       rel='noreferrer noopener'
       role='button'
-      className='fixed right-8 top-[80%] z-[9999999] grid h-12 w-12 animate-bounce cursor-pointer place-items-center rounded-full bg-green-400 shadow duration-1000 hover:bg-green-500'
+      className='fixed right-8 top-[87.5%] z-[9999999] grid h-12 w-12 animate-bounce cursor-pointer place-items-center rounded-full bg-green-400 shadow duration-1000 hover:bg-green-500'
     >
       <Image
         src={icon}

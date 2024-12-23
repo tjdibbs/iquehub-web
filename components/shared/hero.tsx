@@ -1,25 +1,33 @@
-import type { CSSProperties } from 'react';
+import type { CSSProperties, ReactNode } from 'react';
 import Header from '../layout/header';
 import Container from '../shared/container';
 import Link from 'next/link';
 import { Button } from '../ui/button';
 
-const style: CSSProperties = {
-  backgroundImage: `linear-gradient(rgba(6, 51, 84, 0.90), rgba(6, 51, 84, 0.90)), url('/programmes.png')`,
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
-  backgroundRepeat: 'no-repeat',
-};
-
-const ProgrammesHero = ({
-  text = 'Expore Our Programmes',
-  description = "Unlock your potential with our expertly designed courses. From foundational skills to advanced tech expertise, our programmes are tailored to guide you every step of the way. Ready to elevate your career? We're here to support you.",
+const PageHero = ({
+  text,
+  description,
+  linkHref,
+  linkText,
   showBtn = false,
+  imageUrl,
+  children = <></>,
 }: {
-  text?: string;
+  text: string;
+  imageUrl: string;
   description?: string;
   showBtn?: boolean;
+  linkText?: string;
+  linkHref?: string;
+  children?: ReactNode;
 }) => {
+  const style: CSSProperties = {
+    backgroundImage: `linear-gradient(rgba(6, 51, 84, 0.90), rgba(6, 51, 84, 0.90)), url('${imageUrl}')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  };
+
   return (
     <div
       style={style}
@@ -33,13 +41,17 @@ const ProgrammesHero = ({
           </h2>
           <p className='text-center lg:text-base'>{description}</p>
           {showBtn && (
-            <Button className='bg-custom-beige text-black hover:text-custom-beige' asChild>
-              <Link href='/register'>Get Started</Link>
+            <Button
+              className='bg-custom-beige text-black hover:text-custom-beige'
+              asChild
+            >
+              <Link href={linkHref!}>{linkText}</Link>
             </Button>
           )}
+          {children}
         </div>
       </Container>
     </div>
   );
 };
-export default ProgrammesHero;
+export default PageHero;

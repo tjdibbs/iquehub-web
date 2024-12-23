@@ -1,16 +1,22 @@
-import ContactHero from '@/components/contact/hero';
 import ContactForm from '@/components/forms/contact';
 import Container from '@/components/shared/container';
 import { PreloadContactResources } from '@/lib/preload-resources';
 import ng from '@/assets/flag.webp';
 import Image from 'next/image';
 import { MailIcon } from 'lucide-react';
+import PageHero from '@/components/shared/hero';
 
 export default function Page() {
   return (
     <main>
       <PreloadContactResources />
-      <ContactHero />
+      <PageHero
+        text="We'd Love To Hear From You"
+        description='Do you have questions about any of our courses, pricing, policies,
+            terms of service, benefits of enrolling with us, our team is more
+            than willing to be of service.'
+        imageUrl='/contact.png'
+      />
       <section className='py-8'>
         <Container className='grid grid-cols-1 items-center gap-x-12 gap-y-8 lg:grid-cols-2'>
           <div className='max-lg:order-2'>

@@ -42,5 +42,8 @@ export const PreloadProgrammesResources = () => {
 
 export const PreloadNextGenCoderResources = () => {
   ReactDOM.preload('/nextgencoder.jpg', { as: 'image', fetchPriority: 'high' });
+  ReactDOM.preload('/child1.png', { as: 'image' });
+  ReactDOM.preload('/child2.png', { as: 'image' });
+  ReactDOM.preload('/child3.png', { as: 'image' });
   return null
 };

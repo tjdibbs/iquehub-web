@@ -11,6 +11,7 @@ import {
   FacebookOutlined,
   InstagramOutlined,
 } from '@ant-design/icons';
+import { PROGRAMMES } from '@/lib/constants';
 
 const Footer = () => {
   return (
@@ -21,17 +22,15 @@ const Footer = () => {
           <p className='text-sm'>41 Diya street Gbagada, Lagos</p>
         </div>
         <div className='flex-1 space-y-4'>
-          <h6 className='text-lg font-semibold'>Courses</h6>
+          <h6 className='text-lg font-semibold'>Programmes</h6>
           <ul className='space-y-4'>
-            {[
-              'Web Development',
-              'UI/UX Design',
-              'Mobile Development',
-              'Cybersecurity',
-            ].map((course, index) => (
+            {PROGRAMMES.map((programme, index) => (
               <li key={index}>
-                <Link href='/' className='text-sm hover:text-custom-beige'>
-                  {course}
+                <Link
+                  href={`/programmes/${programme.slug}`}
+                  className='text-sm hover:text-custom-beige'
+                >
+                  {programme.title}
                 </Link>
               </li>
             ))}

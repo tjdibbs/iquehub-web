@@ -1,5 +1,5 @@
-import ProgrammesHero from '@/components/programmes/hero';
 import Container from '@/components/shared/container';
+import PageHero from '@/components/shared/hero';
 import { Button } from '@/components/ui/button';
 import { PROGRAMMES } from '@/lib/constants';
 import Image from 'next/image';
@@ -8,7 +8,11 @@ import Link from 'next/link';
 export default function Page() {
   return (
     <main>
-      <ProgrammesHero />
+      <PageHero
+        text='Expore Our Programmes'
+        description="Unlock your potential with our expertly designed courses. From foundational skills to advanced tech expertise, our programmes are tailored to guide you every step of the way. Ready to elevate your career? We're here to support you"
+        imageUrl='/programmes.png'
+      />
       <section className='space-y-12 py-8'>
         <h2 className='text-center text-xl font-bold text-custom-darkBlue lg:text-3xl'>
           Tech Training for Long-Term Career Success
