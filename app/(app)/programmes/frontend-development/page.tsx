@@ -19,6 +19,7 @@ const Page = () => {
       <ProgrammesHero
         text='Frontend Development'
         description='IQ Hub Frontend Development programme is beginner-friendly and project based. It is designed to help participants become job-ready'
+        showBtn={true}
       />
       <section className='space-y-12 py-8'>
         <div className='space-y-8'>
