@@ -1,5 +1,30 @@
 import Image from 'next/image';
 import Container from '../shared/container';
+import { MotionDiv } from '@/lib/motion';
+import { Variants } from 'framer-motion';
+
+const containerVariants: Variants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 20,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+};
 
 const WhyUs = () => {
   return (
@@ -11,10 +36,20 @@ const WhyUs = () => {
             We Are Customer-Centric
           </h2>
         </div>
-        <div className='grid grid-cols-1 items-start gap-8 lg:grid-cols-3'>
+        <MotionDiv
+          variants={containerVariants}
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true, amount: 0.25 }}
+          className='grid grid-cols-1 items-start gap-8 lg:grid-cols-3'
+        >
           {['/classroom.png', '/tutor.png', '/career.png'].map(
             (image, index) => (
-              <div key={index} className='flex flex-col gap-6'>
+              <MotionDiv
+                variants={itemVariants}
+                key={index}
+                className='flex flex-col gap-6'
+              >
                 <div className='group flex items-center justify-center overflow-hidden rounded-xl'>
                   <Image
                     src={image}
@@ -45,10 +80,10 @@ const WhyUs = () => {
                     }
                   </p>
                 </div>
-              </div>
+              </MotionDiv>
             ),
           )}
-        </div>
+        </MotionDiv>
       </Container>
     </section>
   );

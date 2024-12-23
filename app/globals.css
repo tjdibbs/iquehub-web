@@ -11,8 +11,12 @@ body {
 }
 
 .masonry-column {
-  padding-left: 8px; 
+  padding-left: 8px;
   background-clip: padding-box;
+}
+
+.center {
+  @apply container mx-auto max-w-[1440px] px-4 lg:px-8;
 }
 
 @layer base {

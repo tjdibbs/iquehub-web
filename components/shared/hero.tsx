@@ -2,7 +2,91 @@ import type { CSSProperties, ReactNode } from 'react';
 import Header from '../layout/header';
 import Container from '../shared/container';
 import Link from 'next/link';
-import { Button } from '../ui/button';
+import { Variants } from 'framer-motion';
+import { MotionButton, MotionDiv, MotionH2, MotionP } from '@/lib/motion';
+
+const containerVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    scale: 0.95,
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.4,
+      staggerChildren: 0.15,
+      when: "beforeChildren",
+    },
+  },
+  exit: {
+    opacity: 0,
+    scale: 0.95,
+    transition: {
+      duration: 0.3,
+    },
+  },
+};
+
+const titleVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: -20,
+    rotateX: 45,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    rotateX: 0,
+    transition: {
+      duration: 0.4,
+      ease: "easeOut",
+    },
+  },
+};
+
+const descriptionVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 10,
+    filter: "blur(3px)",
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: {
+      duration: 0.3,
+      ease: "easeOut",
+    },
+  },
+};
+
+const buttonVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 10,
+    scale: 0.95,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.3,
+      ease: "easeOut",
+    },
+  },
+  hover: {
+    scale: 1.05,
+    transition: {
+      duration: 0.2,
+    },
+  },
+  tap: {
+    scale: 0.98,
+  },
+};
 
 const PageHero = ({
   text,
@@ -35,23 +119,41 @@ const PageHero = ({
     >
       <Header />
       <Container className='jusify-center flex items-center gap-12 pb-8 text-white'>
-        <div className='mx-auto space-y-6 text-center lg:max-w-4xl xl:max-w-5xl'>
-          <h2 className='text-7xl font-bold leading-snug tracking-wide max-lg:text-6xl max-md:text-4xl'>
+        <MotionDiv
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          className='mx-auto space-y-6 text-center lg:max-w-4xl xl:max-w-5xl'
+        >
+          <MotionH2
+            variants={titleVariants}
+            className='text-7xl font-bold leading-snug tracking-wide max-lg:text-6xl max-md:text-4xl'
+          >
             {text}
-          </h2>
-          <p className='text-center lg:text-base'>{description}</p>
+          </MotionH2>
+          <MotionP 
+            variants={descriptionVariants}
+            className='text-center lg:text-base'
+          >
+            {description}
+          </MotionP>
           {showBtn && (
-            <Button
+            <MotionButton
+              variants={buttonVariants}
+              whileHover="hover"
+              whileTap="tap"
               className='bg-custom-beige text-black hover:text-custom-beige'
               asChild
             >
               <Link href={linkHref!}>{linkText}</Link>
-            </Button>
+            </MotionButton>
           )}
           {children}
-        </div>
+        </MotionDiv>
       </Container>
     </div>
   );
 };
+
 export default PageHero;

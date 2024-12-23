@@ -1,10 +1,48 @@
-import Container from '@/components/shared/container';
 import PageHero from '@/components/shared/hero';
 import { Button } from '@/components/ui/button';
 import { NEXTGENCODER } from '@/lib/constants';
+import { MotionDiv, MotionH2 } from '@/lib/motion';
 import { PreloadNextGenCoderResources } from '@/lib/preload-resources';
+import { Variants } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: 'easeOut',
+    },
+  },
+  hover: {
+    y: -8,
+    transition: {
+      duration: 0.2,
+    },
+  },
+};
+
+const imageVariants: Variants = {
+  hover: {
+    scale: 1.05,
+    transition: {
+      duration: 0.4,
+    },
+  },
+};
 
 export default function Page() {
   return (
@@ -12,13 +50,29 @@ export default function Page() {
       <PreloadNextGenCoderResources />
       <PageHero text='Next Gen Coder' imageUrl='/nextgencoder.jpg' />
       <section className='space-y-12 py-8'>
-        <h2 className='text-center text-xl font-bold text-custom-darkBlue lg:text-3xl'>
+        <MotionH2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: true }}
+          className='text-center text-xl font-bold text-custom-darkBlue lg:text-3xl'
+        >
           Programmes For Kids
-        </h2>
-        <Container className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3'>
+        </MotionH2>
+        <MotionDiv
+          variants={containerVariants}
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true, amount: 0.25 }}
+          className='center grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3'
+        >
           {NEXTGENCODER.map((course, index) => (
-            <div key={index} className='border'>
-              <div className='overflow-hidden'>
+            <MotionDiv
+              key={index}
+              variants={cardVariants}
+              className='overflow-hidden border'
+            >
+              <MotionDiv variants={imageVariants} className='overflow-hidden'>
                 <Image
                   src={course.image}
                   alt={course.title}
@@ -26,7 +80,7 @@ export default function Page() {
                   height={300}
                   className='aspect-[1.5] w-full max-w-full object-cover'
                 />
-              </div>
+              </MotionDiv>
               <div className='flex flex-col items-center justify-center gap-y-2 px-2 py-4 text-center'>
                 <h3 className='text-lg font-semibold text-custom-darkBlue'>
                   {course.title}
@@ -38,9 +92,9 @@ export default function Page() {
                   <Link href='/register'>Enroll now</Link>
                 </Button>
               </div>
-            </div>
+            </MotionDiv>
           ))}
-        </Container>
+        </MotionDiv>
       </section>
     </main>
   );

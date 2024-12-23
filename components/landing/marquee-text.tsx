@@ -3,7 +3,7 @@ import Marquee from 'react-fast-marquee';
 
 const MarqueeText = () => {
   return (
-    <div className='flex flex-nowrap items-center bg-primary py-8 text-custom-beige'>
+    <div className='flex flex-nowrap items-center bg-primary py-6 lg:py-8 text-custom-beige'>
       <Marquee speed={50} gradient={false} pauseOnHover>
         {PROGRAMMES.map(programme => (
           <p
