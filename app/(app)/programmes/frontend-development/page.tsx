@@ -12,6 +12,8 @@ import {
   MODULE_9,
 } from './data';
 import PageHero from '@/components/shared/hero';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 const Page = () => {
   return (
@@ -42,6 +44,11 @@ const Page = () => {
             <Module module={MODULE_7} number={7} />
             <Module module={MODULE_8} number={8} />
             <Module module={MODULE_9} number={9} />
+            <div className="flex items-center justify-center">
+              <Button size="lg" className='hover:bg-white hover:text-primary hover:shadow' asChild>
+                <Link href="/register">Register Now</Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
