@@ -18,7 +18,7 @@ export default function Page() {
       <PageHero
         text='Where Passion Meets Innovation'
         description='Unlock your potentials today'
-        imageUrl='/hero.png'
+        imageUrl='/images/8.webp'
       >
         <form className='mx-auto flex w-full max-w-md items-center gap-0'>
           <Input

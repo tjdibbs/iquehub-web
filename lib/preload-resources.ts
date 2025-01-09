@@ -3,13 +3,13 @@
 import ReactDOM from 'react-dom';
 
 export const PreloadResources = () => {
-  ReactDOM.preload('/hero.png', { as: 'image', fetchPriority: 'high' });
+  ReactDOM.preload('/images/8.webp', { as: 'image', fetchPriority: 'high' });
   ReactDOM.preload('/classroom.png', { as: 'image' });
-  ReactDOM.preload('/tutor.png', { as: 'image' });
-  ReactDOM.preload('/career.png', { as: 'image' });
-  ReactDOM.preload('/learn.png', { as: 'image' });
-  ReactDOM.preload('/meet-people.png', { as: 'image' });
-  ReactDOM.preload('/get-mentored.png', { as: 'image' });
+  ReactDOM.preload('/images/11.webp', { as: 'image' });
+  ReactDOM.preload('/images/7.webp', { as: 'image' });
+  ReactDOM.preload('/images/17.webp', { as: 'image' });
+  ReactDOM.preload('/images/13.webp', { as: 'image' });
+  ReactDOM.preload('/images/14.webp', { as: 'image' });
   return null;
 };
 
@@ -30,20 +30,19 @@ export const PreloadAboutResources = () => {
 };
 
 export const PreloadProgrammesResources = () => {
-  ReactDOM.preload('/programmes.png', { as: 'image', fetchPriority: 'high' });
-  ReactDOM.preload('/frontend.png', { as: 'image' });
-  ReactDOM.preload('/full-stack.png', { as: 'image' });
-  ReactDOM.preload('/digital-marketing.png', { as: 'image' });
-  ReactDOM.preload('/data-science.png', { as: 'image' });
-  ReactDOM.preload('/cyber-security.png', { as: 'image' });
-  ReactDOM.preload('/ui-ux.png', { as: 'image' });
+  ReactDOM.preload('/images/3.webp', { as: 'image', fetchPriority: 'high' });
+  ReactDOM.preload('/images/10.webp', { as: 'image' });
+  ReactDOM.preload('/images/17.webp', { as: 'image' });
+  ReactDOM.preload('/images/12.webp', { as: 'image' });
+  ReactDOM.preload('/images/4.webp', { as: 'image' });
+  ReactDOM.preload('/images/5.webp', { as: 'image' });
   return null;
 };
 
 export const PreloadNextGenCoderResources = () => {
-  ReactDOM.preload('/nextgencoder.jpg', { as: 'image', fetchPriority: 'high' });
-  ReactDOM.preload('/child1.png', { as: 'image' });
-  ReactDOM.preload('/child2.png', { as: 'image' });
-  ReactDOM.preload('/child3.png', { as: 'image' });
+  ReactDOM.preload('/images/16.webp', { as: 'image', fetchPriority: 'high' });
+  ReactDOM.preload('/images/15.webp', { as: 'image' });
+  ReactDOM.preload('/images/18.webp', { as: 'image' });
+  ReactDOM.preload('/images/19.webp', { as: 'image' });
   return null
 };

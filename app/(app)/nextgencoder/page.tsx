@@ -48,7 +48,7 @@ export default function Page() {
   return (
     <main>
       <PreloadNextGenCoderResources />
-      <PageHero text='Next Gen Coder' imageUrl='/nextgencoder.jpg' />
+      <PageHero text='Next Gen Coder' imageUrl='/images/19.webp' />
       <section className='space-y-12 py-8'>
         <MotionH2
           initial={{ opacity: 0, y: 20 }}

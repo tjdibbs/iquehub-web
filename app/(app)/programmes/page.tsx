@@ -11,7 +11,7 @@ export default function Page() {
       <PageHero
         text='Expore Our Programmes'
         description="Unlock your potential with our expertly designed courses. From foundational skills to advanced tech expertise, our programmes are tailored to guide you every step of the way. Ready to elevate your career? We're here to support you"
-        imageUrl='/programmes.png'
+        imageUrl='/images/3.webp'
       />
       <section className='space-y-12 py-8'>
         <h2 className='text-center text-xl font-bold text-custom-darkBlue lg:text-3xl'>

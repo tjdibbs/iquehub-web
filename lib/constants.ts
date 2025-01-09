@@ -4,21 +4,21 @@ export const NEXTGENCODER = [
     description:
       'Learn the skills needed to become a web developer. This course covers HTML, CSS, JavaScript, and more.',
     slug: 'web-development',
-    image: '/child1.png',
+    image: '/images/15.webp',
   },
   {
     title: 'Game Development',
     description:
       'Create your own games with our Game Development course. Learn to code in Unity and build interactive experiences.',
     slug: 'game-development',
-    image: '/child2.png',
+    image: '/images/18.webp',
   },
   {
     title: 'Robotics',
     description:
       'Discover the world of robotics with our Robotics course. Learn to build and program robots to perform tasks.',
     slug: 'robotics',
-    image: '/child3.png',
+    image: '/images/16.webp',
   },
 ];
 
@@ -37,7 +37,7 @@ export const PROGRAMMES = [
       'TypeScript',
     ],
     slug: 'frontend-development',
-    image: '/frontend.png',
+    image: '/images/10.webp',
   },
   {
     title: 'Backend Development',
@@ -53,7 +53,7 @@ export const PROGRAMMES = [
       'Authentication & Authorization',
     ],
     slug: 'backend-development',
-    image: '/full-stack.png',
+    image: '/images/17.webp',
   },
   {
     title: 'Cyber Security',
@@ -67,7 +67,7 @@ export const PROGRAMMES = [
       'SIEM Tools',
     ],
     slug: 'cyber-security',
-    image: '/cyber-security.png',
+    image: '/images/4.webp',
   },
   {
     title: 'UI/UX Design',
@@ -80,7 +80,7 @@ export const PROGRAMMES = [
       'Design Tools (Figma, Sketch)',
     ],
     slug: 'ui-ux-design',
-    image: '/ui-ux.png',
+    image: '/images/5.webp',
   },
   {
     title: 'Digital Marketing / Strategist',
@@ -94,6 +94,6 @@ export const PROGRAMMES = [
       'Data Analytics',
     ],
     slug: 'digital-marketing-strategist',
-    image: '/digital-marketing.png',
+    image: '/images/12.webp',
   },
 ];

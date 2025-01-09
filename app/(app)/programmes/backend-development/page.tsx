@@ -14,7 +14,7 @@ export default function Page() {
         showBtn={true}
         linkHref='/register'
         linkText='Get Started'
-        imageUrl='/full-stack.png'
+        imageUrl='/images/17.webp'
       />
       <section className='space-y-12 py-8'>
         <div className='space-y-8'>

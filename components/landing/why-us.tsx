@@ -43,7 +43,7 @@ const WhyUs = () => {
           viewport={{ once: true, amount: 0.25 }}
           className='grid grid-cols-1 items-start gap-8 lg:grid-cols-3'
         >
-          {['/classroom.png', '/tutor.png', '/career.png'].map(
+          {['/classroom.png', '/images/11.webp', '/images/7.webp'].map(
             (image, index) => (
               <MotionDiv
                 variants={itemVariants}
@@ -57,6 +57,7 @@ const WhyUs = () => {
                     width={100}
                     height={100}
                     priority
+                    quality={100}
                     className='aspect-[6/4] w-full max-w-[300px] rounded-xl object-cover transition-transform duration-1000 ease-linear group-hover:scale-105'
                   />
                 </div>

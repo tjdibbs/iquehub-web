@@ -24,7 +24,7 @@ const Page = () => {
         showBtn={true}
         linkHref='/register'
         linkText='Get Started'
-        imageUrl='/frontend.png'
+        imageUrl='/images/10.webp'
       />
       <section className='space-y-12 py-8'>
         <div className='space-y-8'>

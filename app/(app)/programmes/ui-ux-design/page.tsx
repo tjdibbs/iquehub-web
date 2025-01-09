@@ -13,7 +13,7 @@ export default function Page() {
         showBtn={true}
         linkHref='/register'
         linkText='Get Started'
-        imageUrl='/ui-ux.png'
+        imageUrl='/images/5.webp'
       />
       <section className='space-y-12 py-8'>
         <div className='space-y-8'>

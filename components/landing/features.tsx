@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Container from '../shared/container';
 
-const images = ['/learn.png', '/meet-people.png', '/get-mentored.png'];
+const images = ['/images/17.webp', '/images/13.webp', '/images/14.webp'];
 
 const Features = () => {
   return (
